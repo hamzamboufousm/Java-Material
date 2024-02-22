@@ -225,7 +225,7 @@ class FinalCheckingOXOTests {
     void testBoardExtensionAfterDraw()
     {
         checkForDraw(new String[] {"a1","a2","a3","b1","b3","b2","c1","c3","c2"});
-        model.addColumn();
+        controller.addColumn();
         sendCommandToController("a4");
         String failedTestComment = "Game can't be continued after draw and extension";
         assertNotEquals(model.getWinner(), null, failedTestComment);
@@ -275,7 +275,7 @@ class FinalCheckingOXOTests {
         controller = new OXOController(model);
         sendCommandToController("a3");
         controller.decreaseWinThreshold();
-        assertTrue(model.getWinThreshold() == 3, "Win threshold can be reduced during the game");
+        assertTrue(model.getWinThreshold() == 4, "Win threshold can be reduced during the game");
     }
 
     @Test
@@ -296,7 +296,7 @@ class FinalCheckingOXOTests {
     {
         checkWinnerFor(new String[]{"a1","b1","a2","b2","a3"},4,4,3,0);
         controller.increaseWinThreshold();
-        assertTrue(model.getWinThreshold() == 4, "Win threshold can be increased after a game has been won");
+        assertTrue(model.getWinThreshold() == 3, "Win threshold can be increased after a game has been won");
     }
 
     @Test
