@@ -12,7 +12,7 @@ you can check your coursework this way continuously whilst developing and find o
 fixing and when you have arrived at a fully working solution!
 
 You can download the
-skeleton [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2022_TB-2/code_snippets/zoo.zip)
+skeleton [here](https://www.ole.bris.ac.uk/bbcswebdav/courses/COMSM0086_2023_TB-2/code_snippets/zoo.zip)
 [.](cw-zoo.zip)
 
 You should unzip the contents of that file into a newly prepared local directory and turn that
